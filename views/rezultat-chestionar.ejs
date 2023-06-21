@@ -1,0 +1,21 @@
+<div class="rez"><p><strong>
+        Ați răspuns corect la <%= nrRaspCorecte %> întrebări.</strong>
+</p>
+<% for (let i=0; i < intrebari.length; i++) { %>
+    <h2>
+        <%= intrebari[i].intrebare %>
+    </h2>
+    <% for (let j=0; j < intrebari[i].variante.length; j++) { %>
+        <% if(raspunsuriDate[i]==j) { %>
+            <% if(raspunsuriCorecte[i] == intrebari[i].variante[j]) {%>
+                <div class="corect"><input type="radio" name="raspuns<%= i %>" value="<%= j %>" checked><%= intrebari[i].variante[j] %></input></div><br> 
+            <% } else { %>
+                <div class="gresit"><input type="radio" name="raspuns<%= i %>" value="<%= j %>" checked><%= intrebari[i].variante[j] %></input></div><br> 
+            <% } %>
+        <% } else { %> 
+            <div><input type="radio" name="raspuns<%= i %>" value="<%= j %>" disabled><%= intrebari[i].variante[j] %></input></div><br> 
+        <% } %>
+            
+    <% } %>
+    <p>Raspunsul corect este: <%= raspunsuriCorecte[i] %></p>
+<% } %></div>

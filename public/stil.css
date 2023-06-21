@@ -1,0 +1,203 @@
+input[type="submit"] {
+    color: #ae2727;
+  }
+  
+  div.gresit{
+    background-color: lightcoral;
+    width: 20em;
+}
+div.corect{
+    background-color: lightgreen;
+    width: 20em;
+}
+
+/* Stilizare pentru întregul formular */
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  }
+  
+  h2 {
+    margin: 20px 0;
+    font-size: 22px;
+    font-weight: bold;
+  }
+  
+  input[type="radio"] {
+    margin-right: 10px;
+  }
+  
+  input[type="submit"] {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #b9841c;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width:200px
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #c57a1e;
+    
+  }
+  
+  .active {
+    background-color: #4CAF50;
+  }
+  header {
+    text-align: center;
+
+  }
+
+  footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    height: 25px; 
+    background-color: #f2f2f2;
+    text-align: center;
+    padding: 0px;
+  }
+
+.err {
+    margin: 20px 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: rgb(239, 26, 26);
+  }
+  
+ 
+  div {
+    margin: 10px 0;
+  }
+  
+  input[type="radio"] {
+    margin-right: 10px;
+    vertical-align: middle;
+  }
+  
+  .corect {
+    color: green;
+  }
+  
+  .gresit {
+    color: red;
+  }
+  
+ div.rez {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  }
+
+  nav {
+    background-color: #955715;
+    overflow: hidden;
+  }
+  
+  nav a {
+    float: left;
+    color: #f2f2f2;
+    padding: 20px;
+    text-decoration: none;
+    font-size: 20px;
+  }
+  
+  nav a:hover {
+    background-color: #f09f24;
+    color: black;
+  }
+  
+  nav .par {
+    float: right;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+  }
+
+  .but {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .but button {
+    background-color: #ce8d09;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px;
+    cursor: pointer;
+  }
+  
+  .but button:hover {
+    background-color: #3e8e41;
+  }
+
+  .adaugare{
+    transform: translate(500px, -420px);
+  }
+  
+  .prod{
+    font-size: 18px;
+
+  }
+  .product-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .product-table th,
+  .product-table td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .product-table th {
+    background-color: #f2f2f2;
+  }
+  .but {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+.produse-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+.produse-table th,
+.produse-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+.produse-table th {
+    background-color: #f2f2f2;
+}
+

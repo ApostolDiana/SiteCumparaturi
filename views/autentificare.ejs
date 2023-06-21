@@ -1,0 +1,16 @@
+<header><h1>Autentificare</h1></header><br><br>
+<form method="post" action="/verificare-autentificare">
+    <div>
+        <label for="utilizator">Utilizator: </label>
+        <input type="text" id="utilizator" placeholder="Introduceți utilizator" name="utilizator"><br><br>
+        <label for="parola">Parola: </label>
+        <input type="password" placeholder="Introduceți parola" name="parola" required>
+        <input type="submit" value="Autentificare"><br><br>
+    </div>
+    <% if(mesajEroare) {%>
+        <p class="err"> <%=mesajEroare%></p>
+    <% } %>
+   
+
+
+</form>

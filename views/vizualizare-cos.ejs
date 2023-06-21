@@ -1,0 +1,38 @@
+<% if (produseCos.length !=0) { %>
+  <p >În coș aveți următoarele produse<p>
+      <table class="product-table">
+        <thead>
+          <tr>
+            <th>Nume</th>
+            <th>Pret</th>
+            <th>Cantitate</th>
+            <th>Total</th>
+          </tr>
+        </thead>
+        <tbody>
+          <% produseCos.forEach(function(produs) { %>
+            <tr>
+              <td>
+                <%= produs.nume %>
+              </td>
+              <td>
+                <%= produs.pret %> RON
+              </td>
+              <td>
+                <%= produs.cantitate %>
+              </td>
+              <td>
+                <%= produs.total %> RON
+              </td>
+            </tr>
+            <% }); %>
+        </tbody>
+      </table>
+      <% } %>
+        <div>
+          <% if (produseCos.length !=0) { %>
+            <button class="but" onclick="window.location.href = '/stergere_cos'">Golire coș</button>
+            <% } else { %>
+              <h2 class="cos-gol">Coșul dumneavoastră este gol.</h2>
+              <% } %>
+        </div>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Bricolaj</title>
+    <link rel="stylesheet" href="../stil.css">
+   
+</head>
+
+<body>
+    <nav>
+        <a href="/">Acasă</a>
+        <a href="/chestionar">Chestionar</a>
+        
+        <% if(utilizator && utilizator.rol === "USER") { %>
+            <a href="/deconectare" class="par">Deconectare</a>
+            <p class="par">Autentificat ca <strong><%= utilizator.nume %></strong>!</p>
+            <a href="/vizualizare_cos">Coș</a>
+          <% } else if (utilizator && utilizator.rol === "ADMIN") { %>
+            <a href="/deconectare" class="par">Deconectare</a>
+            <p class="par">Autentificat ca <strong><%= utilizator.nume %></strong> (ADMIN)!</p>
+            <a href="/vizualizare_cos">Coș</a>
+            <a href="/admin">Panou de control admin</a>
+
+          <% } else { %>
+            <a href="/autentificare" class="par">Autentificare</a>
+          <% } %>
+
+    </nav>
+
+    <main>
+        <%- body%>
+    </main>
+
+    <footer>
+        <p>&copy; Apostol Diana</p>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,27 @@
+[
+    {
+      "intrebare": "Când a apărut primul catalog de bricolaj pentru renovarea locuinței?",
+      "variante": ["1855", "1968", "1989", "1970"],
+      "corect": "1"
+    },
+    {
+      "intrebare": "Care este primul site pe care se putea face schimb de informatii despre bricolaj?",
+      "variante": ["BricoTips", "Bricolaj", "HomeTips", "HouseNet"],
+      "corect": "3"
+    },
+    {
+      "intrebare": "Cine a prezentat pentru prima dată, o emisiune TV dedicată bricolajului: “This old house” (“Această casă veche)?",
+      "variante": ["Jerry Springer", "Margaret Thatcher", "Bob Vila", "Hugh Downs"],
+      "corect": "2"
+    },
+    {
+        "intrebare": "Conceptul de bricolaj se referă la: ",
+        "variante": ["Tot ce înseamnă renovarea unei locuințe", "Papetărie", "Gastronomie", "Astronomie"],
+        "corect": "0"
+      },
+      {
+        "intrebare": "Care este un magazin de bricolaj?",
+        "variante": ["Lidl", "Leroy Merlin", "Frișcot", "Bistro"],
+        "corect": "1"
+      }
+  ]

@@ -1,0 +1,31 @@
+<% if(utilizator) { %>
+    <p>Bine ai venit, <%= utilizator.utilizator %>!</p>
+    <% } %>
+    
+    <div class="but">
+        <button id="button" onclick="window.location.href = '/creare-bd'"> Creare BD </button>
+        <button id="button" onclick="window.location.href = '/inserare-bd'"> Încărcare BD</button>
+    </div>
+    <h1>Listă produse disponibile</h1>
+    <table class="produse-table">
+        <thead>
+            <tr>
+                <th>Nume produs</th>
+                <th>Pret</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            <% produse.forEach(function(produs) { %>
+            <tr>
+                <td><%= produs.nume %></td>
+                <td><%= produs.pret %> RON</td>
+                <td>
+                    <% if (utilizator) { %>
+                    <button class="button" onclick="window.location.href = '/adaugare_cos?id=<%= produs.id%>'">Adaugă în coș</button>
+                    <% } %>
+                </td>
+            </tr>
+            <% }); %>
+        </tbody>
+        </table>

@@ -1,0 +1,13 @@
+<header><h1>Chestionar</h1></header><br><br>
+<form method="post" action="/rezultat-chestionar">
+    <% for (let i=0; i < intrebari.length; i++) { %>
+        <h2>
+            <%= intrebari[i].intrebare %>
+        </h2>
+        <% for (let j=0; j < intrebari[i].variante.length; j++) { %>
+            <input type="radio" name="raspuns<%= i %>" value="<%= j %>">
+            <%= intrebari[i].variante[j] %><br>
+                <% } %>
+                    <% } %>
+                        <input type="submit" value="Trimite">
+</form>
